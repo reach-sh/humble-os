@@ -1,0 +1,296 @@
+stack build --fast --test --no-run-tests --flag reach:everest reach:test:reach-test reach:exe:reachc reach:exe:reach
+Compiling "main"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 9 theorems; No failures!
+*Premium* Verifying AVM bytecode for appClear
+*Premium* Verifying AVM bytecode for appCompanion
+Conservative analysis on Algorand found:
+*Premium* Verifying AVM bytecode for appApproval
+The program is 167 bytes.
+Compiling "net_tok"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 926 theorems; No failures!
+*Premium* Verifying AVM bytecode for appClear
+*Premium* Verifying AVM bytecode for appCompanion
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:411:9:dot.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + uses 283 bytes of logs.
+   + uses 4 log calls.
+   + uses 3 inner transactions.
+   + uses 4 input transactions.
+   + may use up to 2 transaction references.
+   + uses 432 of its budget of 700 (268 is left over).
+   + costs 7 fees.
+ * Step 2, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:576:3:dot.
+   + may use up to 2 assets.
+   + uses 146 bytes of logs.
+   + uses 3 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 139 of its budget of 700 (561 is left over).
+   + costs 4 fees.
+ * Step 3, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:dot.
+   + may use up to 1 asset.
+   + may use up to 1 account.
+   + uses 344 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 3 input transactions.
+   + may use up to 2 transaction references.
+   + uses 661 of its budget of 700 (39 is left over).
+   + costs 5 fees.
+ * API api_Protocol_delete, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:576:3:application.
+   + may use up to 2 assets.
+   + uses 146 bytes of logs.
+   + uses 3 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 139 of its budget of 700 (561 is left over).
+   + costs 4 fees.
+ * API api_Protocol_harvest, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + may use up to 1 account.
+   + uses 321 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 382 of its budget of 700 (318 is left over).
+   + costs 3 fees.
+ * API api_Provider_deposit, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 3 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 578 of its budget of 700 (122 is left over).
+   + costs 4 fees.
+ * API api_Provider_withdraw, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 344 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 364 of its budget of 700 (336 is left over).
+   + costs 4 fees.
+ * API api_Trader_exactSwapAForB, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 657 of its budget of 700 (43 is left over).
+   + costs 4 fees.
+ * API api_Trader_exactSwapBForA, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 661 of its budget of 700 (39 is left over).
+   + costs 4 fees.
+ * API api_Trader_swapAForB, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 645 of its budget of 700 (55 is left over).
+   + costs 3 fees.
+ * API api_Trader_swapBForA, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + uses 651 of its budget of 700 (49 is left over).
+   + costs 3 fees.
+*Premium* Verifying AVM bytecode for appApproval
+The program is 4160 bytes.
+Compiling "tok_tok"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 1208 theorems; No failures!
+*Premium* Verifying AVM bytecode for appClear
+*Premium* Verifying AVM bytecode for appCompanion
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:411:9:dot.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + uses 291 bytes of logs.
+   + uses 4 log calls.
+   + uses 4 inner transactions.
+   + uses 5 input transactions.
+   + may use up to 3 transaction references.
+   + uses 540 of its budget of 700 (160 is left over).
+   + costs 9 fees.
+ * Step 2, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:576:3:dot.
+   + may use up to 3 assets.
+   + uses 146 bytes of logs.
+   + uses 3 log calls.
+   + uses 4 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 155 of its budget of 700 (545 is left over).
+   + costs 5 fees.
+ * Step 3, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:dot.
+   + may use up to 2 assets.
+   + may use up to 1 account.
+   + uses 344 bytes of logs.
+   + uses 4 log calls.
+   + uses 3 inner transactions.
+   + uses 3 input transactions.
+   + may use up to 3 transaction references.
+   + uses 669 of its budget of 700 (31 is left over).
+   + costs 6 fees.
+ * API api_Protocol_delete, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:576:3:application.
+   + may use up to 3 assets.
+   + uses 146 bytes of logs.
+   + uses 3 log calls.
+   + uses 4 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 155 of its budget of 700 (545 is left over).
+   + costs 5 fees.
+ * API api_Protocol_harvest, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 2 assets.
+   + may use up to 1 account.
+   + uses 321 bytes of logs.
+   + uses 4 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 398 of its budget of 700 (302 is left over).
+   + costs 4 fees.
+ * API api_Provider_deposit, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 3 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 590 of its budget of 700 (110 is left over).
+   + costs 4 fees.
+ * API api_Provider_withdraw, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 2 assets.
+   + uses 344 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 372 of its budget of 700 (328 is left over).
+   + costs 4 fees.
+ * API api_Trader_exactSwapAForB, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 2 assets.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 669 of its budget of 700 (31 is left over).
+   + costs 4 fees.
+ * API api_Trader_exactSwapBForA, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 2 assets.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 669 of its budget of 700 (31 is left over).
+   + costs 4 fees.
+ * API api_Trader_swapAForB, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 657 of its budget of 700 (43 is left over).
+   + costs 3 fees.
+ * API api_Trader_swapBForA, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:431:19:application.
+   + may use up to 1 asset.
+   + uses 336 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 659 of its budget of 700 (41 is left over).
+   + costs 3 fees.
+*Premium* Verifying AVM bytecode for appApproval
+The program is 4314 bytes.
+Compiling "triumvirate"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 171 theorems; No failures!
+*Premium* Verifying AVM bytecode for appClear
+*Premium* Verifying AVM bytecode for appCompanion
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:125:9:dot.
+   + may use up to 2 foreign applications.
+   + uses 548 bytes of logs.
+   + uses 2 log calls.
+   + uses 3 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 1400 (1207 is left over).
+   + costs 5 fees.
+ * Step 2, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:136:19:dot.
+   + may use up to 2 assets.
+   + may use up to 3 foreign applications.
+   + may use up to 1 account.
+   + uses 747 bytes of logs.
+   + uses 5 log calls.
+   + uses 4 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 6 transaction references.
+   + uses 724 of its budget of 1400 (676 is left over).
+   + costs 5 fees.
+ * API api_Triumvir_propose, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:136:19:application.
+   + may use up to 1 foreign application.
+   + uses 699 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 1 transaction reference.
+   + uses 560 of its budget of 700 (140 is left over).
+   + costs 3 fees.
+ * API api_Triumvir_support, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:136:19:application.
+   + may use up to 2 assets.
+   + may use up to 3 foreign applications.
+   + may use up to 1 account.
+   + uses 747 bytes of logs.
+   + uses 5 log calls.
+   + uses 4 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 6 transaction references.
+   + uses 724 of its budget of 1400 (676 is left over).
+   + costs 5 fees.
+ * API api_register, which starts at /Users/chris/dev/reach/duoswap-core/index.rsh:136:19:application.
+   + may use up to 1 foreign application.
+   + uses 652 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 1 transaction reference.
+   + uses 310 of its budget of 700 (390 is left over).
+   + costs 3 fees.
+*Premium* Verifying AVM bytecode for appApproval
+The program is 2326 bytes.

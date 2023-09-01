@@ -1,0 +1,7 @@
+export const RUNNING_TESTS = Boolean(process.env.REACT_APP_RUNNING_TESTS)
+
+export const TESTNET_NODE_TOKEN =
+  process.env.REACT_APP_TESTNET_DEFAULT_NODE_TOKEN
+
+export const MAINNET_NODE_TOKEN =
+  process.env.REACT_APP_MAINNET_DEFAULT_NODE_TOKEN

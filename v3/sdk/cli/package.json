@@ -1,0 +1,23 @@
+{
+  "name": "humblesdk-cli",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-modules --unhandled-rejections=strict ./index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reach-sh/humble-sdk": "file:..",
+    "@reach-sh/stdlib": "^0.1.13-rc.0",
+    "algosdk": "^2.0.0",
+    "axios": "^0.27.2",
+    "enquirer": "^2.3.6"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

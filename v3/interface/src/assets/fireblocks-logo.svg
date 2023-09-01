@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="fireblocks-logo" transform="translate(1.000000, 1.000000)">
+            <polygon id="Path" stroke="#FFFFFF" fill="#FFFEFE" fill-rule="nonzero" points="9 5 14 13 4 13"></polygon>
+            <path d="M4.54002389,12.5977584 L14.4713262,12.5977584 L9.4432497,4.48318804 L4.54002389,12.5977584 Z M0,16.0498132 L0,1.9501868 C0,0.873128371 0.884197501,0 1.97491039,0 L17.0250896,0 C18.1158025,0 19,0.873128371 19,1.9501868 L19,16.0498132 C19,17.1268716 18.1158025,18 17.0250896,18 L1.97491039,18 C0.884197501,18 0,17.1268716 0,16.0498132 Z" id="Shape" fill="#123C66"></path>
+        </g>
+    </g>
+</svg>

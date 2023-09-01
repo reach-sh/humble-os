@@ -1,0 +1,7 @@
+/node_modules/
+/.reach/smt-cache
+/build/*
+!/build/*mjs
+
+/Dockerfile
+/Makefile

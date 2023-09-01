@@ -1,0 +1,109 @@
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 1224 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/staker.rsh:103:12:dot.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + uses 304 bytes of logs.
+   + uses 2 log calls.
+   + uses 3 inner transactions.
+   + uses 4 input transactions.
+   + may use up to 3 transaction references.
+   + uses 312 of its budget of 1400 (1088 is left over).
+   + costs 7 fees.
+ * Step 1, which starts at /app/staker.rsh:110:12:dot.
+   + uses 208 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 input transactions.
+   + uses 365 of its budget of 700 (335 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at /app/staker.rsh:133:7:dot.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 217 bytes of logs.
+   + uses 3 log calls.
+   + uses 5 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 4 transaction references.
+   + uses 220 of its budget of 1400 (1180 is left over).
+   + costs 7 fees.
+ * Step 4, which starts at /app/staker.rsh:165:19:dot.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + uses 465 bytes of logs.
+   + uses 5 log calls.
+   + uses 4 inner transactions.
+   + uses 2 input transactions.
+   + may use up to 3 transaction references.
+   + uses 1217 of its budget of 1400 (183 is left over).
+   + costs 6 fees.
+ * API api_Setup_abortSetup, which starts at /app/staker.rsh:133:7:application.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 217 bytes of logs.
+   + uses 3 log calls.
+   + uses 5 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 4 transaction references.
+   + uses 220 of its budget of 1400 (1180 is left over).
+   + costs 6 fees.
+ * API api_Setup_fund, which starts at /app/staker.rsh:133:7:application.
+   + uses 217 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 275 of its budget of 700 (425 is left over).
+   + costs 2 fees.
+ * API api_Staker_emergencyWithdraw, which starts at /app/staker.rsh:165:19:application.
+   + may use up to 1 asset.
+   + uses 333 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 1 transaction reference.
+   + uses 372 of its budget of 700 (328 is left over).
+   + costs 2 fees.
+ * API api_Staker_harvest, which starts at /app/staker.rsh:165:19:application.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + uses 357 bytes of logs.
+   + uses 4 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 924 of its budget of 1400 (476 is left over).
+   + costs 4 fees.
+ * API api_Staker_stake, which starts at /app/staker.rsh:165:19:application.
+   + may use up to 1 foreign application.
+   + uses 301 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 824 of its budget of 1400 (576 is left over).
+   + costs 3 fees.
+ * API api_Staker_withdraw, which starts at /app/staker.rsh:165:19:application.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + uses 333 bytes of logs.
+   + uses 4 log calls.
+   + uses 2 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 833 of its budget of 1400 (567 is left over).
+   + costs 3 fees.
+ * API api_Staker_withdrawAndHarvest, which starts at /app/staker.rsh:165:19:application.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + uses 465 bytes of logs.
+   + uses 5 log calls.
+   + uses 4 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 1217 of its budget of 1400 (183 is left over).
+   + costs 5 fees.
+The program is 5183 bytes.

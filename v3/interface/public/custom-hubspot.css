@@ -1,0 +1,8 @@
+#hubspot-messages-iframe-container {
+    margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+    #hubspot-messages-iframe-container {
+        margin-bottom: 96px;
+    }
+}

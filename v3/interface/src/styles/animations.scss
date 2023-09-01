@@ -1,0 +1,271 @@
+/******************************************
+*  File : Animations.scss
+*******************************************/
+@keyframes beacon {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4, 4);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  25% {
+    transform: translateY(8%);
+  }
+  50% {
+    transform: translateY(-8%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes collapse-horizontal {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes collapse-vertical {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.98, 0.98);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes rotate90 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-10%, 0);
+    opacity: 0.25;
+  }
+  25% {
+    transform: translate(8%, 0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translate(-4%, 0);
+    opacity: 0.75;
+  }
+  75% {
+    transform: translate(2%, 0);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-10%);
+    }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation Mixins */
+@mixin collapse($horizontal: true, $duration: 180ms) {
+  @if $horizontal {
+    animation: collapse-horizontal $duration ease-out;
+  } @else {
+    animation: collapse-vertical $duration ease-out;
+  }
+}
+@mixin expand($horizontal: true, $duration: 180ms) {
+  @if $horizontal {
+    animation: expand-horizontal 180ms ease-out;
+  } @else {
+    animation: expand-horizontal 180ms ease-out;
+  }
+}
+@mixin merge-animations($a1, $a2, $d1: 250ms, $d2: 250ms) {
+  animation: $a1 $d1 ease-out forwards, $a2 $d2 ease-out forwards;
+}
+@mixin spinner($size: 0.75rem) {
+  animation: spin 0.8s linear infinite;
+  border-radius: 50%;
+  border: 0.15rem solid;
+  border-top-color: transparent;
+  content: '';
+  display: inline-block;
+  height: $size;
+  left: 48%;
+  top: 40%;
+  transform-origin: center;
+  width: $size;
+}
+
+/* Classes */
+.spinner--after,
+.spinner--before {
+  display: flex;
+}
+.spinner--after::after,
+.spinner--before::before {
+  @include spinner;
+}
+.spinner--after::after {
+  margin-left: 0.3rem;
+}
+.spinner--before::before {
+  margin-right: 0.3rem;
+}
+.beacon {
+  animation: beacon 1.1s ease-out;
+}
+.bounce {
+  animation: bounce 750ms ease-out;
+}
+.collapse--horizontal {
+  @include merge-animations(fade-out, collapse-horizontal, 400ms);
+}
+.collapse--vertical {
+  @include merge-animations(fade-out, collapse-vertical, 400ms);
+}
+.expand--horizontal {
+  @extend .collapse--horizontal;
+  animation-direction: reverse;
+}
+.expand--vertical {
+  @extend .collapse--vertical;
+  animation-direction: reverse;
+}
+.fade-in {
+  animation: fade-in 250ms ease-out;
+  animation-fill-mode: both;
+}
+.fade-in-bounce {
+  @include merge-animations(fade-in, bounce, 0.8s);
+}
+.fade-out {
+  @extend .fade-in;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+.pulse {
+  animation: pulse 1.1s ease-out infinite;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 500ms;
+}
+.rotate-reverse {
+  transform: rotate(0deg);
+  transition: transform 500ms;
+}
+.scale-in {
+  animation: scale-in 180ms ease-out;
+}
+.slide-down-fade-in {
+  will-change: opacity, transform;
+  @include merge-animations(slide-down, fade-in, 300ms, 300ms);
+}
+.slide-in-right {
+  will-change: opacity, transform;
+  @include merge-animations(slide-right, fade-in, 250ms, 250ms);
+}
+
+.slide-out-right {
+  @extend .slide-in-right;
+  animation-direction: reverse;
+}
+.slide-up-fade-out {
+  @extend .slide-down-fade-in;
+  animation-direction: reverse;
+}
+.shake {
+  animation: shake 400ms ease-out;
+}
+.spin {
+  animation: spin 250ms ease-out;
+}
+
+/* Duration helpers */
+.infinite {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

@@ -1,0 +1,8 @@
+.DS_Store
+.DS_Store?
+*.db
+*.tgz
+*.zip
+lib/*
+node_modules/*
+.env

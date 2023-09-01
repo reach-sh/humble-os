@@ -1,0 +1,3 @@
+const MIN_TOKEN_BALANCE = 0.001
+
+export default MIN_TOKEN_BALANCE

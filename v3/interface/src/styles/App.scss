@@ -1,0 +1,130 @@
+@import 'styles/animations.scss';
+@import 'material-icons/iconfont/material-icons.css';
+@import 'styles/animations.scss';
+@import 'styles/reset.scss';
+@import 'styles/animations.scss';
+@import 'styles/datepicker.scss';
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.custom-toast-position {
+  top: 6.5em;
+  right: 8em;
+}
+
+.custom-toast-position-mobile {
+  width: auto !important;
+}
+
+hr {
+  background-color: #d7d7d799;
+  border: 0;
+  flex-grow: 1;
+  height: 1px;
+}
+
+// Hides arrows on number inputs
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.dark-mode-svg-filter {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(278deg)
+    brightness(101%) contrast(104%);
+}
+
+.disabled-filter {
+  filter: invert(1)
+}
+
+.light-mode-svg-filter {
+  filter: invert(4%) sepia(18%) saturate(890%) hue-rotate(2deg) brightness(93%)
+    contrast(89%);
+}
+
+.dark-sage-svg-filter {
+  filter: invert(57%) sepia(26%) saturate(339%) hue-rotate(109deg)
+    brightness(92%) contrast(88%);
+}
+
+.tooltip {
+  display: flex;
+  a {
+    font-weight: bold;
+    color: #6c9688;
+    &:hover {
+      text-decoration: underline;
+    }
+    img {
+      width: 18px;
+    }
+  }
+
+  .tooltiptext {
+    visibility: hidden;
+    text-align: center;
+    width: 288px;
+    background-color: #191713;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 16px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+    bottom: 200%;
+    left: 50%;
+    margin-left: -136px;
+  }
+
+  &:hover .tooltiptext {
+    visibility: visible;
+    &:hover {
+      visibility: visible;
+    }
+  }
+
+  &:hover .tooltipbridge {
+    visibility: visible;
+    &:hover {
+      visibility: visible;
+    }
+  }
+
+  .tooltipbridge {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    border-top-color: #191713;
+    border-style: solid;
+    border-width: 20px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 50%;
+    margin-left: -16px;
+    &:hover .tooltiptext {
+      visibility: visible;
+    }
+  }
+}

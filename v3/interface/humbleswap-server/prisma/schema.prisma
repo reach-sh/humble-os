@@ -1,0 +1,155 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+// Blockchains
+enum Blockchain {
+  ALGO
+  ETH
+  SOL
+}
+
+// Blockchain networks
+enum BlockchainProvider {
+  mainnet
+  testnet
+}
+
+// Token Verification Tier (Pera wallet)
+enum PeraVerificationTier {
+  suspicious
+  unverified
+  verified
+  trusted
+}
+
+// Token
+model Token {
+  id               String                @id @unique
+  name             String                @db.VarChar(255)
+  symbol           String                @db.VarChar(16)
+  url              String                @db.VarChar(255)
+  supply           String
+  decimals         Int
+  verified         Boolean?              @default(false)
+  verificationTier PeraVerificationTier? @default(unverified)
+  // Housekeeping
+  chain            Blockchain
+  provider         BlockchainProvider
+}
+
+// Liquidity Pool (static data)
+model Pool {
+  id             String             @id @unique
+  announcerId    String
+  poolTokenId    String
+  tokenAId       String
+  tokenADecimals Int
+  tokenBId       String
+  tokenBDecimals Int
+  // relations
+  PoolLiquidity  PoolLiquidity[]
+  // Housekeeping
+  tradeable      Boolean?           @default(true)
+  duplicate      Boolean?           @default(false)
+  chain          Blockchain         @default(ALGO)
+  provider       BlockchainProvider @default(testnet)
+}
+
+// Liquidity Pool (dynamic/historical data)
+model PoolLiquidity {
+  id                    Int      @id @default(autoincrement())
+  tokenABalance         String
+  tokenAFees            String
+  tokenBBalance         String
+  tokenBFees            String
+  mintedLiquidityTokens String
+  // Fetched from the vestige api
+  apr24h                String?  @default("0")
+  apr7d                 String?  @default("0")
+  volume24h             String?  @default("0")
+  volume7d              String?  @default("0")
+  // Housekeeping
+  added                 DateTime @default(now())
+  lastUpdated           DateTime @default(now())
+  Pool                  Pool?    @relation(fields: [poolId], references: [id], onDelete: Cascade)
+  poolId                String
+}
+
+// Staking Farm (static data)
+model Farm {
+  id                         String             @id @unique
+  announcerId                String
+  stakedTokenPoolId          String? //  [ => Pool.id ]
+  stakedTokenId              String //  [ => Token.id ]
+  rewardTokenId              String //  [ => Token.id ]
+  totalRewardA               String
+  totalRewardB               String
+  startDate                  DateTime?
+  startBlock                 String
+  endDate                    DateTime?
+  endBlock                   String
+  isPartnerFarm              Boolean?           @default(false)
+  networkRewardsPerBlock     String
+  rewardTokenRewardsPerBlock String
+  rewardTokenDecimals        Int
+  rewardTokenSymbol          String
+  stakedTokenDecimals        Int
+  stakedTokenSymbol          String
+  stakedTokenTotalSupply     String
+  FarmLiquidity              FarmLiquidity[]
+  // Housekeeping
+  chain                      Blockchain
+  provider                   BlockchainProvider
+}
+
+// Staking Farm (dynamic/historical data)
+model FarmLiquidity {
+  id                       Int      @id @default(autoincrement())
+  remainingRewardA         String
+  remainingRewardB         String
+  totalStaked              String
+  primaryStakeTokenBalance String
+  Farm                     Farm?    @relation(fields: [farmId], references: [id], onDelete: Cascade)
+  farmId                   String
+  // Housekeeping
+  added                    DateTime @default(now())
+  lastUpdated              DateTime @default(now())
+}
+
+// Limit Order Status
+enum LimitOrderStatus {
+  open
+  closed
+}
+
+// Limit Order - These are mostly static
+model LimitOrder {
+  contractId     String             @unique
+  creator        String
+  amtA           String
+  amtB           String
+  tokenA         String
+  tokenB         String
+  tokenADecimals Int
+  tokenBDecimals Int
+  status         LimitOrderStatus   @default(open)
+  announcerId    String
+  // Housekeeping
+  chain          Blockchain
+  provider       BlockchainProvider
+}
+
+model Versions {
+  id                    Int         @unique
+  version               String
+  protocolId            String
+  partnerFarmAnnouncer  String
+  publicFarmAnnouncer   String
+  limitOrderAnnouncer   String
+}
