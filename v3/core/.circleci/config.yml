@@ -1,0 +1,134 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.1
+  slack: circleci/slack@4.3.3
+
+executors:
+  real:
+    machine:
+      image: "ubuntu-2004:202107-02"
+    resource_class: "medium"
+    environment:
+      LC_ALL: "en_US.UTF-8"
+      PATH: "/home/circleci/.local/bin:/usr/local/bin:/usr/bin:/bin:/sbin"
+  fake:
+    docker:
+    - image: "cimg/base:stable"
+    resource_class: "small"
+    environment:
+      LC_ALL: "en_US.UTF-8"
+
+jobs:
+  "test":
+    parameters:
+      connector:
+        description: "which connector"
+        type: string
+      pullMaster:
+        description: "should pull from master"
+        type: boolean
+        default: false
+    executor: real
+    steps:
+    - checkout
+    - when:
+        condition: <<parameters.pullMaster>>
+        steps:
+          - run: 
+              name: Pull master branch images
+              command: |
+                curl -o VERSION https://raw.githubusercontent.com/reach-sh/reach-lang/master/VERSION
+                source ./VERSION
+                export REGISTRYC="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
+                aws ecr get-login-password | docker login --username AWS --password-stdin "${REGISTRYC}"
+                DEVNET=devnet-$(echo <<parameters.connector>> | tr '[:upper:]' '[:lower:]')
+                for IMG in reach reach-cli runner $DEVNET  ; do
+                  AWS_IMAGE=${REGISTRYC}/${IMG}
+                  REPO_IMAGE=reachsh/${IMG}
+                  MASTER=${AWS_IMAGE}:circleci--master
+                  LATEST=${REPO_IMAGE}:latest
+                  docker pull "${MASTER}"
+                  docker tag ${MASTER} ${LATEST}
+                  docker tag ${LATEST} ${REPO_IMAGE}:${VERSION}
+                  docker tag ${LATEST} ${REPO_IMAGE}:${MAJOR}.${MINOR}
+                  docker tag ${LATEST} ${REPO_IMAGE}:${MAJOR}
+                done
+                make clean
+    - run:
+        name: Compile
+        command: |
+          touch *.rsh # force compilation of all modules
+          make reach
+          if ! make build ; then
+            echo > ./message.sh
+            echo 'STATUS=":warning: FAIL"' >> ./message.sh
+            echo 'SUMMARY="Failed to compile"' >> ./message.sh
+          fi
+        no_output_timeout: 30m
+    - run:
+        name: Run tests
+        command: |
+          export REACH_CONNECTOR_MODE=<<parameters.connector>>
+          make test || true
+        no_output_timeout: 30m
+    - run: 
+        name: Check test results
+        command: |
+          mkdir -p /tmp/artifacts
+          cp message.sh log test_results.xml /tmp/artifacts
+
+          cat ./message.sh
+          cat ./message.sh >> $BASH_ENV
+          grep OKAY ./message.sh
+    - store_test_results:
+        path: "test_results.xml"
+    - store_artifacts:
+        path: /tmp/artifacts
+    - slack/notify:
+        channel: 'C030GKPMWKB' # labs-ci
+        custom: |
+          { "blocks": [
+              { "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "*${STATUS}* ${CIRCLE_USERNAME}/${CIRCLE_BRANCH} > ${CIRCLE_JOB} <${CIRCLE_BUILD_URL}|more...>\n${SUMMARY}" }}]}
+
+workflows:
+  test:
+    jobs:
+      # ALGO
+      # - "test":
+      #     name: "test.ALGO.release"
+      #     connector: "ALGO"
+      #     context: circleci-on-slack
+      - "test":
+          name: "test.ALGO.master"
+          connector: "ALGO"
+          pullMaster: true
+          context:
+            - circleci-on-slack
+            - reachdevbot-aws-ecr
+
+      # ETH
+      # - "test":
+      #     name: "test.ETH.release"
+      #     connector: "ETH"
+      #     context: circleci-on-slack
+      # - "test":
+      #     name: "test.ETH.master"
+      #     connector: "ETH"
+      #     pullMaster: true
+      #     context: circleci-on-slack
+
+      # CFX
+      # # I think it is broken because of storage costs.
+      # - "test":
+      #     name: "test.CFX.release"
+      #     connector: "CFX"
+      #     context: circleci-on-slack
+      # - "test":
+      #     name: "test.CFX.master"
+      #     connector: "CFX"
+      #     pullMaster: true
+      #     context: circleci-on-slack

@@ -1,0 +1,48 @@
+{
+  "v2": {
+    "dev": {
+      "protocolAddress": "YNKCECPOYM3ZLFOHKZTG466GYCAGXKWRWA4G5C6BFLXNDHBUAZ73XATU2U",
+      "protocolId": 92391728,
+      "partnerFarmAnnouncerId": 97832257,
+      "publicFarmAnnouncer": 107539798,
+      "limitOrderAnnouncer": 0
+    },
+    "staging": {
+      "protocolAddress": "XSWSQVQPFMTEQO7UTXGQA5CSSYCDBT2WEN5XWNQ76EBLT2CFRV2HBYKZBE",
+      "protocolId": 93443561,
+      "partnerFarmAnnouncerId": 100485250,
+      "publicFarmAnnouncer": 107539944,
+      "limitOrderAnnouncer": 0
+    },
+    "mainnet": {
+      "protocolAddress": "RKUC34RZOMK26ZOD4J2OFY3UILORX5AAMIX24L5MWAUUF6DVJVBJYQSABQ",
+      "protocolId": 771884869,
+      "partnerFarmAnnouncerId": 830314595,
+      "publicFarmAnnouncer": 857348615,
+      "limitOrderAnnouncer": 0
+    }
+  },
+  "v3": {
+    "dev": {
+      "protocolAddress": "HRQ2VRI2UYTQTQI6A5INORRIYUPNPDMJMH7FI3IQDAAELUIXPQ2ODCIW7M",
+      "protocolId": 155794116,
+      "partnerFarmAnnouncerId": 155795091,
+      "publicFarmAnnouncer": 155795247,
+      "limitOrderAnnouncer": 155795513
+    },
+    "staging": {
+      "protocolAddress": "Y3AL4QRFMZKGHJAIOAIHX4DI3PBSM3CTAGHR2I3HPS4KLLPZCFJTZ2VZH4",
+      "protocolId": 155794231,
+      "partnerFarmAnnouncerId": 155795276,
+      "publicFarmAnnouncer": 155795331,
+      "limitOrderAnnouncer": 155795555
+    },
+    "mainnet": {
+      "protocolAddress": "DZTWFFO6BYYGDYLASHPKVOTHFDOS7L322SYDB7JK7EOZZLKOY5JOWBWYRU",
+      "protocolId": 1021412502,
+      "partnerFarmAnnouncerId": 1021411568,
+      "publicFarmAnnouncer": 1021411753,
+      "limitOrderAnnouncer": 1021412130
+    }
+  }
+}

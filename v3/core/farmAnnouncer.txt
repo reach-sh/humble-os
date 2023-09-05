@@ -1,0 +1,102 @@
+Compiling "large"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 16 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/announcer.rsh:22:12:dot.
+   + uses 8 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 input transactions.
+   + uses 103 of its budget of 700 (597 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at /app/announcer.rsh:24:28:dot.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 446 bytes of logs.
+   + uses 5 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 700 (507 is left over).
+   + costs 2 fees.
+ * API api_announce, which starts at /app/announcer.rsh:24:28:application.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 446 bytes of logs.
+   + uses 5 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 700 (507 is left over).
+   + costs 2 fees.
+The program is 406 bytes.
+Compiling "medium"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 16 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/announcer.rsh:22:12:dot.
+   + uses 8 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 input transactions.
+   + uses 103 of its budget of 700 (597 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at /app/announcer.rsh:24:28:dot.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 284 bytes of logs.
+   + uses 5 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 700 (507 is left over).
+   + costs 2 fees.
+ * API api_announce, which starts at /app/announcer.rsh:24:28:application.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 284 bytes of logs.
+   + uses 5 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 700 (507 is left over).
+   + costs 2 fees.
+The program is 405 bytes.
+Compiling "small"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 14 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/announcer.rsh:22:12:dot.
+   + uses 8 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 input transactions.
+   + uses 103 of its budget of 700 (597 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at /app/announcer.rsh:24:28:dot.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 188 bytes of logs.
+   + uses 5 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 700 (507 is left over).
+   + costs 2 fees.
+ * API api_announce, which starts at /app/announcer.rsh:24:28:application.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 188 bytes of logs.
+   + uses 5 log calls.
+   + uses 1 inner transaction.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 193 of its budget of 700 (507 is left over).
+   + costs 2 fees.
+The program is 406 bytes.

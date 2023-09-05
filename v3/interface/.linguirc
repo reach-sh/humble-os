@@ -1,0 +1,20 @@
+{
+  "locales": [
+    "en",
+    "es",
+    "zh"
+  ],
+  "sourceLocale": "en",
+  "catalogs": [
+    {
+      "path": "src/locales/{locale}/messages",
+      "include": [
+        "src"
+      ],
+      "exclude": [
+        "<rootDir>/src/@humble-sdk/**"
+      ]
+    }
+  ],
+  "format": "po"
+}

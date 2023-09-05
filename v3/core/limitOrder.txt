@@ -1,0 +1,308 @@
+Compiling "announcer"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 11 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/limitOrder.rsh:139:5:dot.
+   + uses 8 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 input transactions.
+   + uses 103 of its budget of 700 (597 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at /app/limitOrder.rsh:141:27:dot.
+   + uses 168 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 input transaction.
+   + uses 195 of its budget of 700 (505 is left over).
+   + costs 1 fee.
+ * API api_announceLimitOrder, which starts at /app/limitOrder.rsh:141:27:application.
+   + uses 168 bytes of logs.
+   + uses 4 log calls.
+   + uses 1 input transaction.
+   + uses 195 of its budget of 700 (505 is left over).
+   + costs 1 fee.
+The program is 393 bytes.
+Compiling "evil_swap_net"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 30 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/limitOrder.rsh:174:5:dot.
+   + uses 24 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 input transactions.
+   + uses 113 of its budget of 700 (587 is left over).
+   + costs 2 fees.
+ * Step 1, which starts at /app/limitOrder.rsh:180:7:dot.
+   + uses 65 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 150 of its budget of 700 (550 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at reach standard library:197:11:dot.
+   + may use up to 1 account.
+   + uses 24 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 1 transaction reference.
+   + uses 112 of its budget of 700 (588 is left over).
+   + costs 3 fees.
+ * Step 3, which starts at reach standard library:197:11:dot.
+   + may use up to 1 account.
+   + uses 24 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 1 transaction reference.
+   + uses 114 of its budget of 700 (586 is left over).
+   + costs 3 fees.
+ * API api_Trader_swapAForB, which starts at /app/limitOrder.rsh:180:7:application.
+   + uses 65 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 150 of its budget of 700 (550 is left over).
+   + costs 2 fees.
+ * API api_Trader_swapBForA, which starts at /app/limitOrder.rsh:180:7:application.
+   + uses 65 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 150 of its budget of 700 (550 is left over).
+   + costs 2 fees.
+The program is 650 bytes.
+Compiling "evil_swap_tok"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 49 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/limitOrder.rsh:174:5:dot.
+   + may use up to 1 asset.
+   + uses 32 bytes of logs.
+   + uses 2 log calls.
+   + uses 1 inner transaction.
+   + uses 3 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 172 of its budget of 700 (528 is left over).
+   + costs 4 fees.
+ * Step 1, which starts at /app/limitOrder.rsh:180:7:dot.
+   + uses 65 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 204 of its budget of 700 (496 is left over).
+   + costs 2 fees.
+ * Step 2, which starts at reach standard library:197:11:dot.
+   + may use up to 1 asset.
+   + may use up to 1 account.
+   + uses 24 bytes of logs.
+   + uses 2 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 132 of its budget of 700 (568 is left over).
+   + costs 4 fees.
+ * Step 3, which starts at reach standard library:197:11:dot.
+   + may use up to 1 asset.
+   + may use up to 1 account.
+   + uses 24 bytes of logs.
+   + uses 2 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 134 of its budget of 700 (566 is left over).
+   + costs 4 fees.
+ * API api_Trader_swapAForB, which starts at /app/limitOrder.rsh:180:7:application.
+   + uses 65 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 204 of its budget of 700 (496 is left over).
+   + costs 2 fees.
+ * API api_Trader_swapBForA, which starts at /app/limitOrder.rsh:180:7:application.
+   + uses 65 bytes of logs.
+   + uses 3 log calls.
+   + uses 2 input transactions.
+   + uses 204 of its budget of 700 (496 is left over).
+   + costs 2 fees.
+The program is 971 bytes.
+Compiling "lo_net_tok"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 81 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/limitOrder.rsh:47:5:dot.
+   + may use up to 1 asset.
+   + uses 104 bytes of logs.
+   + uses 2 log calls.
+   + uses 1 inner transaction.
+   + uses 3 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 189 of its budget of 700 (511 is left over).
+   + costs 4 fees.
+ * Step 1, which starts at /app/limitOrder.rsh:51:5:dot.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 56 bytes of logs.
+   + uses 3 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 259 of its budget of 700 (441 is left over).
+   + costs 3 fees.
+ * Step 2, which starts at /app/limitOrder.rsh:65:7:dot.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 114 bytes of logs.
+   + uses 4 log calls.
+   + uses 7 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 352 of its budget of 700 (348 is left over).
+   + costs 8 fees.
+ * API api_Cancel, which starts at /app/limitOrder.rsh:65:7:application.
+   + may use up to 1 asset.
+   + may use up to 1 account.
+   + uses 74 bytes of logs.
+   + uses 3 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 160 of its budget of 700 (540 is left over).
+   + costs 4 fees.
+ * API api_SwapViaPool, which starts at /app/limitOrder.rsh:65:7:application.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 114 bytes of logs.
+   + uses 4 log calls.
+   + uses 7 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 352 of its budget of 700 (348 is left over).
+   + costs 8 fees.
+The program is 1398 bytes.
+Compiling "lo_tok_net"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 86 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/limitOrder.rsh:47:5:dot.
+   + may use up to 1 asset.
+   + uses 104 bytes of logs.
+   + uses 2 log calls.
+   + uses 1 inner transaction.
+   + uses 3 input transactions.
+   + may use up to 1 transaction reference.
+   + uses 189 of its budget of 700 (511 is left over).
+   + costs 4 fees.
+ * Step 1, which starts at /app/limitOrder.rsh:51:5:dot.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 56 bytes of logs.
+   + uses 3 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 269 of its budget of 700 (431 is left over).
+   + costs 3 fees.
+ * Step 2, which starts at /app/limitOrder.rsh:65:7:dot.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 106 bytes of logs.
+   + uses 4 log calls.
+   + uses 7 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 329 of its budget of 700 (371 is left over).
+   + costs 8 fees.
+ * API api_Cancel, which starts at /app/limitOrder.rsh:65:7:application.
+   + may use up to 1 asset.
+   + may use up to 1 account.
+   + uses 74 bytes of logs.
+   + uses 3 log calls.
+   + uses 3 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 2 transaction references.
+   + uses 166 of its budget of 700 (534 is left over).
+   + costs 4 fees.
+ * API api_SwapViaPool, which starts at /app/limitOrder.rsh:65:7:application.
+   + may use up to 1 asset.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 106 bytes of logs.
+   + uses 4 log calls.
+   + uses 7 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 329 of its budget of 700 (371 is left over).
+   + costs 8 fees.
+The program is 1363 bytes.
+Compiling "lo_tok_tok"...
+Verifying knowledge assertions
+Verifying for generic connector
+  Verifying when ALL participants are honest
+  Verifying when NO participants are honest
+Checked 98 theorems; No failures!
+Conservative analysis on Algorand found:
+ * Step 0, which starts at /app/limitOrder.rsh:47:5:dot.
+   + may use up to 2 assets.
+   + uses 128 bytes of logs.
+   + uses 2 log calls.
+   + uses 2 inner transactions.
+   + uses 4 input transactions.
+   + may use up to 2 transaction references.
+   + uses 234 of its budget of 700 (466 is left over).
+   + costs 6 fees.
+ * Step 1, which starts at /app/limitOrder.rsh:51:5:dot.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 64 bytes of logs.
+   + uses 3 log calls.
+   + uses 1 inner transaction.
+   + uses 2 input transactions.
+   + may use up to 2 transaction references.
+   + uses 273 of its budget of 700 (427 is left over).
+   + costs 3 fees.
+ * Step 2, which starts at /app/limitOrder.rsh:65:7:dot.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 122 bytes of logs.
+   + uses 4 log calls.
+   + uses 8 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 4 transaction references.
+   + uses 372 of its budget of 700 (328 is left over).
+   + costs 9 fees.
+ * API api_Cancel, which starts at /app/limitOrder.rsh:65:7:application.
+   + may use up to 2 assets.
+   + may use up to 1 account.
+   + uses 82 bytes of logs.
+   + uses 3 log calls.
+   + uses 4 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 3 transaction references.
+   + uses 180 of its budget of 700 (520 is left over).
+   + costs 5 fees.
+ * API api_SwapViaPool, which starts at /app/limitOrder.rsh:65:7:application.
+   + may use up to 2 assets.
+   + may use up to 1 foreign application.
+   + may use up to 1 account.
+   + uses 122 bytes of logs.
+   + uses 4 log calls.
+   + uses 8 inner transactions.
+   + uses 1 input transaction.
+   + may use up to 4 transaction references.
+   + uses 372 of its budget of 700 (328 is left over).
+   + costs 9 fees.
+The program is 1573 bytes.

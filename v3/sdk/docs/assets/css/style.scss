@@ -1,0 +1,291 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:wght@300&display=swap");
+
+@mixin flex($direction: row, $content-align: flex-start) {
+  align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  place-content: $content-align;
+}
+
+@mixin app-font {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.04rem;
+}
+
+@mixin heading($font-size: 1.2rem) {
+  @include heading-font();
+  font-weight: 600;
+  font-size: $font-size;
+  line-height: 2.8rem;
+}
+
+@mixin heading-font() {
+  font-family: "Open Sans", sans-serif;
+}
+
+@mixin subheading($font-size) {
+  @include heading($font-size);
+  color: #36332e;
+  margin: 0.55rem 0;
+}
+
+@mixin h1 {
+  @include heading(3.5rem);
+  color: #191713;
+}
+@mixin h2 {
+  @include heading(2.6rem);
+  color: #191713;
+}
+@mixin h3 {
+  @include subheading(1.8rem);
+}
+@mixin h4 {
+  @include subheading(1.4rem);
+}
+@mixin h5 {
+  @include subheading(1.2rem);
+}
+@mixin h6 {
+  @include subheading(0.995rem);
+  font-weight: bolder;
+  line-height: 1.125rem;
+}
+
+@mixin line-clamp($lines) {
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin sticky($top: 0) {
+  position: sticky;
+  top: $top;
+  z-index: 999;
+}
+
+@mixin rounded {
+  border-radius: 4px;
+}
+
+/* 
+  * CSS reset based on meyer reset: modified to pull in 
+  * rules and theming from sibling 'mixins.scss' file.
+
+  (See Meyer reset here: http://meyerweb.com/eric/tools/css/reset/)
+   -------
+   License: none (public domain)
+*/
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  height: 100vh;
+  overflow: hidden;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+input,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.6;
+  position: relative;
+  vertical-align: baseline;
+}
+
+body {
+  @include app-font();
+  color: #36332E;
+  font-size: 0.9rem;
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  padding: 0;
+  /* Smooth scrolling haxx -- need this for Glory™ on iOS devices */
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  color: #6c9688;
+  font-weight: bolder;
+  text-decoration: none;
+
+  &:hover {
+    color: #b4ccc4;
+  }
+}
+
+h1,
+.h1 {
+  @include h1();
+}
+h2,
+.h2 {
+  @include h2();
+}
+h3,
+.h3 {
+  @include h3();
+}
+h4,
+.h4 {
+  @include h4();
+}
+h5,
+.h5 {
+  @include h5();
+}
+h6,
+.h6 {
+  @include h6();
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+input[type="text"] {
+  border-bottom: 1px solid;
+}
+
+pre,
+code {
+  border-radius: 8px;
+  padding: 0.4rem;
+  &.highlight {
+    margin: 0.5rem 0 1rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main content/Overrides */
+#container {
+  background: #f8f4e6;
+}
+
+.inner {
+  max-width: 900px;
+  width: 100vw;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+
+  .inner {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner {
+    max-width: 100%;
+  }
+}

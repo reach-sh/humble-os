@@ -1,0 +1,36 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# cypress
+cypress/videos
+cypress/scripts/node_modules
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+junit.xml
+
+# production
+/build
+# Documentation Production build
+/duoswap-docs
+
+# misc
+.DS_Store
+.env*
+/.vscode
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation folder
+docs/node_modules
+
+# i18n
+# src/locales/
+
+*.zip

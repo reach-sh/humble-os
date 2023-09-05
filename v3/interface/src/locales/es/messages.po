@@ -1,0 +1,1433 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2023-02-09 12:04-0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+
+#: src/components/Swap/StatsCard/index.tsx:72
+msgid "0.25% of swap will be paid to Liquidity Providers."
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Tokens.tsx:111
+msgid "1. Staking Token"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Rewards.tsx:219
+msgid "2. Rewards"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Duration.tsx:108
+msgid "3. Farm Start Day and Time"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Duration.tsx:127
+msgid "4. Farm Close Day and Time"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:502
+msgid "= MARKET"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:79
+msgid "APR and TVL cannot be calculated for this reward token."
+msgstr ""
+
+#: src/components/Farm/YourFarmItem.tsx:398
+msgid "AVAILABLE REWARDS"
+msgstr ""
+
+#: src/App.routes.ts:65
+msgid "Add"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:161
+msgid "Add Liquidity"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:88
+msgid "Add Token"
+msgstr ""
+
+#: src/components/Farm/YourFarmItem.tsx:377
+#: src/components/Farm/YourFarmItem.tsx:389
+#: src/components/Liquidity/YourLiquidity/LiquidityItem.tsx:241
+msgid "Add more"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:86
+msgid "Adding..."
+msgstr ""
+
+#: src/components/Modals/AppUpdateModal.tsx:71
+msgid "All local data has been cleared: the window will reload when you close this modal."
+msgstr ""
+
+#: src/constants/messages.ts:12
+msgid "All transactions are secure and encrypted."
+msgstr ""
+
+#: src/components/Swap/StatsCard/WarningCard.tsx:180
+msgid "Allowed slippage"
+msgstr ""
+
+#: src/components/Modals/SlippageChangeModal.tsx:66
+msgid "Allowing a high slippage tolerance you may lose quite a significant amount of money swapping high volatile tokens."
+msgstr ""
+
+#: src/components/Modals/AppUpdateModal.tsx:67
+msgid "App updated"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:25
+msgid "April"
+msgstr ""
+
+#: src/components/Modals/ConfirmCreateFarmModal.tsx:62
+msgid "At the end of this process, you will receive a URL with your farm's contract ID. It is a quick way to get to your farm. Save it carefully: <0>the app will only provide this link once.</0>"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:29
+msgid "August"
+msgstr ""
+
+#: src/components/Farm/FarmItemDropdown.tsx:183
+msgid "Available Rewards"
+msgstr ""
+
+#: src/components/Modals/ConfirmMigrateWithdrawModal.tsx:96
+msgid "Back"
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:231
+#: src/components/Farm/FarmTableItem.tsx:302
+msgid "Balance"
+msgstr ""
+
+#: src/components/Modals/MigrateWithdrawSuccessModal.tsx:18
+msgid "Balance moved into V3 Pool:"
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:71
+msgid "Before proceeding, please read the instructions below carefully."
+msgstr ""
+
+#: src/components/Modals/DoubleCheckModal.tsx:42
+msgid "Before you begin"
+msgstr ""
+
+#: src/components/Modals/WarningModal.tsx:18
+msgid "Before you proceed"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:471
+msgid "Buy"
+msgstr ""
+
+#: src/constants/messages.ts:16
+msgid "Buy %%"
+msgstr ""
+
+#: src/constants/messages.ts:15
+msgid "Buy %% via %PRV%"
+msgstr ""
+
+#: src/components/Modals/BuyAlgoModal.tsx:184
+msgid "Buy {connector} via {variant}"
+msgstr ""
+
+#: src/components/Common/LiquidityDisclaimer.tsx:12
+msgid "By adding liquidity you'll earn 0.25% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accumulate in real time and can be claimed by removing your liquidity."
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:506
+#: src/components/Modals/ClearLocalDataModal.tsx:22
+#: src/components/Modals/ModalComponent.tsx:124
+#: src/constants/messages.ts:26
+msgid "Cancel"
+msgstr ""
+
+#: src/constants/messages.ts:27
+msgid "Cancel Order"
+msgstr ""
+
+#: src/components/Pool/Create.tsx:118
+msgid "Cannot create a partially empty pool"
+msgstr ""
+
+#: src/components/Pool/Create.tsx:120
+msgid "Cannot create a pool with matching tokens"
+msgstr ""
+
+#: src/constants/messages.ts:61
+msgid "Change %% reward funder"
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:141
+msgid "Checking token opt-in..."
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Rewards.tsx:222
+msgid "Choose the best combination."
+msgstr ""
+
+#: src/components/ClaimRewards/index.tsx:319
+msgid "Claim Rewards"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:362
+msgid "Claiming"
+msgstr ""
+
+#: src/components/Header/Account/Disconnect.tsx:51
+#: src/components/Modals/ClearLocalDataModal.tsx:21
+msgid "Clear Local Data"
+msgstr ""
+
+#: src/components/Modals/GenericImageModal.tsx:44
+#: src/components/Modals/LimitOrderCanceledModal.tsx:43
+#: src/components/Modals/LimitOrderSubmitModal.tsx:135
+#: src/components/Modals/SuccessPoolModal.tsx:281
+msgid "Close"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:53
+msgid "Combined price or token amount(s) of the remaining reward token(s)"
+msgstr ""
+
+#: src/reach/api/liquidityMigrator.ts:36
+#: src/reach/api/trader.ts:171
+#: src/reach/bridge/Admin/interface.ts:31
+#: src/reach/bridge/FarmAdmin.ts:26
+msgid "Configuring application ..."
+msgstr ""
+
+#: src/components/ConfirmRemoveLiquidity.tsx:126
+#: src/components/LimitOrder/index.tsx:539
+#: src/components/Modals/ModalComponent.tsx:123
+#: src/components/Swap/index.tsx:707
+msgid "Confirm"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:538
+msgid "Confirm Limit Order"
+msgstr ""
+
+#: src/components/Swap/index.tsx:706
+msgid "Confirm Swap"
+msgstr ""
+
+#: src/components/ConfirmRemoveLiquidity.tsx:100
+msgid "Confirm removing liquidity"
+msgstr ""
+
+#: src/components/ConnectWallet.tsx:184
+msgid "Connect"
+msgstr ""
+
+#: src/components/AlgoWalletNotFound.tsx:46
+#: src/components/Farm/FarmTable.tsx:571
+#: src/components/Farm/FarmTable.tsx:597
+msgid "Connect Wallet"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:51
+#: src/components/Farm/CreateFarmForm.Validate.tsx:51
+msgid "Connect on desktop to create farms"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:152
+#: src/components/Swap/index.tsx:122
+#: src/constants/messages.ts:28
+msgid "Connect wallet"
+msgstr ""
+
+#: src/components/Farm/index.tsx:291
+msgid "Connect wallet to see farms"
+msgstr ""
+
+#: src/components/Pool/PoolList/index.tsx:332
+msgid "Connect wallet to see popular pools"
+msgstr ""
+
+#: src/components/Farm/YourFarms.tsx:72
+msgid "Connect wallet to see your farm liquidity"
+msgstr ""
+
+#: src/constants/messages.ts:59
+msgid "Connecting: complete any actions in the %% checkout popup."
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:118
+#: src/components/Modals/ConfirmMigrateWithdrawModal.tsx:97
+msgid "Continue"
+msgstr ""
+
+#: src/components/Farm/CreateFarmSuccess.tsx:183
+#: src/components/Farm/FarmItemDropdown.tsx:176
+msgid "Copied!"
+msgstr ""
+
+#: src/constants/messages.ts:29
+msgid "Copy Order"
+msgstr ""
+
+#: src/components/Farm/CreateFarmSuccess.tsx:183
+#: src/components/Farm/FarmItemDropdown.tsx:176
+msgid "Copy link"
+msgstr ""
+
+#: src/constants/messages.ts:6
+msgid "Could not connect to %%. Please recheck your transaction details and try again"
+msgstr ""
+
+#: src/reach/api/staker.ts:65
+msgid "Could not fetch Farm"
+msgstr ""
+
+#: src/reach/api/staker.ts:84
+#: src/reach/api/staker.ts:103
+msgid "Could not fetch balance"
+msgstr ""
+
+#: src/App.routes.ts:54
+#: src/constants/messages.ts:32
+msgid "Create Farm"
+msgstr ""
+
+#: src/App.routes.ts:49
+#: src/constants/messages.ts:33
+msgid "Create Partner Farm"
+msgstr ""
+
+#: src/constants/messages.ts:31
+msgid "Create Pool"
+msgstr ""
+
+#: src/components/Farm/YourFarms.tsx:84
+msgid "Create farm"
+msgstr ""
+
+#: src/components/Liquidity/YourLiquidity/index.tsx:118
+msgid "Create pool"
+msgstr ""
+
+#: src/reach/bridge/FarmAdmin.ts:24
+msgid "Creating Farm Application ..."
+msgstr ""
+
+#: src/reach/api/trader.ts:170
+msgid "Creating Limit order ..."
+msgstr ""
+
+#: src/reach/bridge/Admin/interface.ts:30
+msgid "Creating Pool ..."
+msgstr ""
+
+#: src/reach/api/liquidityMigrator.ts:35
+msgid "Creating application ..."
+msgstr ""
+
+#: src/components/Header/Settings/SettingsList/DisplayCurrency.tsx:50
+msgid "Currency Unit"
+msgstr ""
+
+#: src/components/Common/CurrentPoolShare.tsx:20
+msgid "Current Share of the Pool"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:33
+msgid "December"
+msgstr ""
+
+#: src/reach/api/liquidityProvider.ts:148
+msgid "Deposit"
+msgstr ""
+
+#: src/constants/messages.ts:19
+msgid "Depositing funds"
+msgstr ""
+
+#: src/reach/bridge/FarmAdmin.ts:30
+msgid "Depositing required minimum stake ..."
+msgstr ""
+
+#: src/components/Header/Account/Disconnect.tsx:43
+msgid "Disconnect"
+msgstr ""
+
+#: src/components/Common/Toasts/Success/Done.tsx:21
+msgid "Done"
+msgstr ""
+
+#: src/components/Swap/index.tsx:118
+msgid "Enter an amount above"
+msgstr ""
+
+#: src/helpers/getReach.ts:267
+msgid "Error setting provider: {0}"
+msgstr ""
+
+#: src/components/Common/ExchangeRate.tsx:91
+msgid "Exchange Rate<0/>"
+msgstr ""
+
+#: src/reach/api/liquidityMigrator.ts:37
+msgid "Exchange old LP Tokens ..."
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:57
+msgid "Expected percentage of return on investment at current rates"
+msgstr ""
+
+#: src/constants/messages.ts:4
+msgid "Failed to publish Farm to HumbleSwap."
+msgstr ""
+
+#: src/constants/messages.ts:5
+msgid "Failed to publish Pool to HumbleSwap."
+msgstr ""
+
+#: src/App.routes.ts:44
+#: src/constants/messages.ts:35
+msgid "Farm"
+msgstr ""
+
+#: src/components/Farm/index.tsx:205
+msgid "Farm ID"
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:88
+msgid "Farm Rewards will be issued even if there are no stakes in your Farm Yield. Rewards issued without stakes will result in a permanent loss of these values. To prevent this, <0>you will be required to make a minimum initial stake once the farm is created.</0> We recommend that you keep your starting stake for the entire duration of the rewards issuance period."
+msgstr ""
+
+#: src/components/Farm/YourFarms.tsx:83
+msgid "Farm liquidity"
+msgstr ""
+
+#: src/components/Farm/YourFarms.tsx:74
+msgid "Farms Loading..."
+msgstr ""
+
+#: src/components/Farm/index.tsx:192
+msgid "Farms updated!"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:23
+msgid "February"
+msgstr ""
+
+#: src/constants/messages.ts:36
+msgid "Fill Order"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:524
+#: src/components/Pool/Create.tsx:270
+msgid "First Token"
+msgstr ""
+
+#: src/components/Modals/AppUpdateModal.tsx:77
+#: src/components/Modals/WarningModal.tsx:35
+msgid "Got it"
+msgstr ""
+
+#: src/components/Farm/CreateFarmSuccess.tsx:176
+msgid "Here is the link:"
+msgstr ""
+
+#: src/components/PopupBlocked.tsx:87
+msgid "Hey! It seems that you have the pop-up blocker activated."
+msgstr ""
+
+#: src/components/IdleUserNotification/index.tsx:74
+msgid "Hi, there!"
+msgstr ""
+
+#: src/components/Modals/SlippageChangeModal.tsx:63
+msgid "High slippage tolerance is risky!"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Rewards.tsx:302
+msgid "How much {0} will you issue in reward?"
+msgstr ""
+
+#: src/constants/messages.ts:37
+msgid "HumbleSwap Partner"
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:113
+msgid "I have carefully read and understood the instructions."
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:47
+msgid "If possible, try either a shorter duration or increased rewards payout."
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:519
+msgid "Info refreshing in 4 seconds. Info will refresh immediately if you click on this loading icon."
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:271
+msgid "Info refreshing in 5 seconds. Click this button to refresh immediately."
+msgstr ""
+
+#: src/components/Swap/index.tsx:616
+msgid "Info refreshing in 5 seconds. Info will refresh immediately if you click on this loading icon."
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:86
+msgid "Initial Requirements"
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:530
+#: src/constants/messages.ts:64
+msgid "Insufficient balance"
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:100
+msgid "Issue rewards"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:22
+msgid "January"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:28
+msgid "July"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:27
+msgid "June"
+msgstr ""
+
+#: src/components/Header/Settings/SettingsList/Language.tsx:41
+msgid "Language"
+msgstr ""
+
+#: src/components/Common/ExchangeRate.tsx:95
+msgid "Learn more about exchange rate."
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:73
+msgid "Learn more about liquidity providing."
+msgstr ""
+
+#: src/components/Swap/StatsCard/WarningCard.tsx:174
+msgid "Learn more about price impact"
+msgstr ""
+
+#: src/components/Swap/StatsCard/WarningCard.tsx:183
+msgid "Learn more about slippage."
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:83
+msgid "Learn more about the minimum received."
+msgstr ""
+
+#: src/App.routes.ts:34
+#: src/constants/messages.ts:38
+msgid "Limit Order"
+msgstr ""
+
+#: src/components/Modals/LimitOrderCanceledModal.tsx:48
+msgid "Limit Order Canceled!"
+msgstr ""
+
+#: src/constants/messages.ts:56
+msgid "Limit Order filled!"
+msgstr ""
+
+#: src/components/Modals/LimitOrderSubmitModal.tsx:107
+msgid "Limit Order submitted"
+msgstr ""
+
+#: src/components/Common/ExchangeRate.tsx:144
+msgid "Limit Rate"
+msgstr ""
+
+#: src/constants/messages.ts:55
+msgid "Limit rate is %DIFF% below market rate."
+msgstr ""
+
+#: src/constants/messages.ts:54
+msgid "Limit rate is %DIFF% higher than the market rate for %TOKN%!"
+msgstr ""
+
+#: src/constants/messages.ts:40
+msgid "Liquidity Pools"
+msgstr ""
+
+#: src/pages/CreateFarm.tsx:26
+msgid "Loading Form ..."
+msgstr ""
+
+#: src/pages/RemoveFromPool.tsx:54
+msgid "Loading Pool..."
+msgstr ""
+
+#: src/pages/RemoveFromPool.tsx:55
+msgid "Loading Tokens..."
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:166
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:166
+msgid "Loading tokens ..."
+msgstr ""
+
+#: src/constants/messages.ts:20
+msgid "Loading your liquidity"
+msgstr ""
+
+#: src/components/Swap/index.tsx:119
+msgid "Loading..."
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/index.tsx:92
+msgid "Manage Tokens"
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:73
+msgid "Management"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:24
+msgid "March"
+msgstr ""
+
+#: src/components/Common/PairCard/index.tsx:287
+msgid "Max"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:26
+msgid "May"
+msgstr ""
+
+#: src/pages/MigrateLiquidity.tsx:264
+msgid "Migrate"
+msgstr ""
+
+#: src/components/Liquidity/YourLiquidity/index.tsx:147
+msgid "Migrate V2 Liquidity"
+msgstr ""
+
+#: src/constants/messages.ts:49
+msgid "Migrating V2 liquidity"
+msgstr ""
+
+#: src/components/Modals/MigrateWithdrawSuccessModal.tsx:16
+msgid "Migration Complete!"
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:80
+msgid "Minimum received"
+msgstr ""
+
+#: src/components/Modals/ConfirmCreateFarmModal.tsx:50
+msgid "Minimum stake"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:163
+#: src/components/Pool/Create.tsx:121
+#: src/components/Swap/index.tsx:124
+msgid "Must maintain a minimum balance of"
+msgstr ""
+
+#: src/components/Farm/index.tsx:235
+msgid "My farms"
+msgstr ""
+
+#: src/components/Header/Settings/SettingsList/Network/index.tsx:47
+msgid "Network change detected!"
+msgstr ""
+
+#: src/components/Pool/PoolList/index.tsx:336
+msgid "No Pools Available"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/index.tsx:108
+msgid "No Tokens Added"
+msgstr ""
+
+#: src/components/AlgoWalletNotFound.tsx:42
+msgid "No Wallet found!"
+msgstr ""
+
+#: src/reach/bridge/Admin/interface.ts:54
+#: src/reach/bridge/Admin/interface.ts:54
+msgid "No data received"
+msgstr ""
+
+#: src/components/Farm/YourFarms.tsx:74
+msgid "No farm liquidity to display"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:512
+msgid "No farm with id"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:514
+msgid "No farms match these filters"
+msgstr ""
+
+#: src/components/Common/PairCard/TokenSelector.tsx:202
+msgid "No token matches found"
+msgstr ""
+
+#: src/components/Pool/Create.tsx:326
+msgid "Not enough"
+msgstr ""
+
+#: src/components/Swap/index.tsx:120
+msgid "Not enough %% for this swap"
+msgstr ""
+
+#: src/components/Swap/index.tsx:121
+msgid "Not enough %% liquidity for this swap"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:162
+msgid "Not enough %% tokens"
+msgstr ""
+
+#: src/components/ClaimRewards/index.tsx:309
+#: src/components/Common/StakingLiquidity.tsx:519
+msgid "Not enough ALGO"
+msgstr ""
+
+#: src/components/Pool/Create.tsx:119
+msgid "Not enough funds"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:624
+msgid "Not enough {0} tokens to add liquidity"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:459
+msgid ""
+"Not enough {0} tokens to create a Limit\n"
+"Order. To proceed, go to"
+msgstr ""
+
+#: src/components/Farm/FarmItemDropdown.tsx:251
+msgid "Note: Unstaking also claims your current rewards"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:32
+msgid "November"
+msgstr ""
+
+#: src/components/PopupBlocked.tsx:104
+msgid "OK"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:31
+msgid "October"
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:485
+msgid "Of the <0>total value</0> in this farm."
+msgstr ""
+
+#: src/components/Swap/index.tsx:127
+msgid "Opt in to"
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:137
+msgid "Opt in to %%"
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:383
+msgid "Opt in to {0}"
+msgstr ""
+
+#: src/reach/bridge/FarmAdmin.ts:25
+msgid "Opt-in to Farm (for rewards payout) ..."
+msgstr ""
+
+#: src/helpers/pool.ts:279
+msgid "Opting In"
+msgstr ""
+
+#: src/constants/messages.ts:73
+msgid "Opting in to %%"
+msgstr ""
+
+#: src/reach/bridge/Admin/interface.ts:32
+msgid "Opting-in to LP Token ..."
+msgstr ""
+
+#: src/components/LimitOrder/LimitOrdersList.tsx:123
+msgid "Order Details"
+msgstr ""
+
+#: src/components/LimitOrder/LimitOrderRate.tsx:64
+msgid "Order Rate"
+msgstr ""
+
+#: src/components/ConfirmRemoveLiquidity.tsx:122
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:311
+msgid "Output is estimated."
+msgstr ""
+
+#: src/components/Swap/Confirm/index.tsx:117
+msgid "Output is estimated. You will receive at least {minReceived} {0} or the transaction will revert."
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:50
+msgid "Pair name"
+msgstr ""
+
+#: src/components/Modals/SelectPaymentMethodModal.tsx:70
+msgid "Payment method"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/index.tsx:135
+msgid "Please Connect to Manage Tokens"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:230
+msgid "Please contact support with your wallet address and the contract ID \"{0}.\""
+msgstr ""
+
+#: src/components/AlgoWalletNotFound.tsx:51
+msgid "Please ensure you have at least one Wallet extension installed and enabled, and that you are signed in."
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:87
+msgid "Please enter a valid token id"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:616
+#: src/components/Pool/Create.tsx:308
+msgid "Please provide more than {MIN_TOKEN_BALANCE} tokens for token A or token B"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:77
+#: src/components/Farm/CreateFarmForm.Validate.tsx:77
+msgid "Please select a reward token."
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:52
+#: src/components/Farm/CreateFarmForm.Validate.tsx:52
+msgid "Please select a staking token."
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:71
+#: src/components/Farm/CreateFarmForm.Validate.tsx:71
+msgid "Please select at least one reward and an amount."
+msgstr ""
+
+#: src/constants/messages.ts:60
+msgid "Please set the %% reward payout"
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:498
+msgid "Please triple check the trustworthiness of tokens"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:310
+msgid "Please wait ..."
+msgstr ""
+
+#: src/App.routes.ts:39
+#: src/constants/messages.ts:39
+msgid "Pool"
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:91
+msgid "Pool Liquidity"
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:434
+#: src/components/ROICalculator/index.tsx:197
+msgid "Pool Tokens"
+msgstr ""
+
+#: src/components/Pool/Create.tsx:117
+msgid "Pool already exists"
+msgstr ""
+
+#: src/components/Pool/PoolList/index.tsx:277
+msgid "Pools updated!"
+msgstr ""
+
+#: src/components/Farm/index.tsx:206
+msgid "Popular farms"
+msgstr ""
+
+#: src/components/Pool/PoolList/index.tsx:314
+msgid "Popular pools"
+msgstr ""
+
+#: src/components/Swap/StatsCard/WarningCard.tsx:169
+msgid "Price impact"
+msgstr ""
+
+#: src/components/Modals/SlippageChangeModal.tsx:84
+msgid "Proceed"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:220
+msgid "Publishing Farm ..."
+msgstr ""
+
+#: src/components/ROICalculator/index.tsx:129
+#: src/components/ROICalculator/index.tsx:236
+msgid "ROI AT Current Rates"
+msgstr ""
+
+#: src/components/ROICalculator/index.tsx:100
+#: src/components/ROICalculator/index.tsx:204
+msgid "ROI Calculator"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:498
+#: src/components/Liquidity/AddLiquidity.tsx:590
+msgid "Rate"
+msgstr ""
+
+#: src/constants/messages.ts:41
+msgid "Re-open"
+msgstr ""
+
+#: src/App.routes.ts:59
+#: src/components/Liquidity/YourLiquidity/LiquidityItem.tsx:242
+msgid "Remove"
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:138
+#: src/components/Modals/SuccessPoolModal.tsx:289
+msgid "Remove Liquidity"
+msgstr ""
+
+#: src/components/ConfirmRemoveLiquidity.tsx:107
+msgid "Remove amount"
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:278
+msgid "Remove amount:"
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:147
+msgid "Remove liquidity"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:153
+msgid "Review Limit Order"
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:102
+msgid "Rewards are issued per block on the Algorand blockchain. <0>If your rewards token has zero decimal places, your total reward must be greater than the number of blocks in the duration of the farm.</0>"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:46
+msgid "Rewards cannot be evenly distributed across the duration of your farm."
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:461
+#: src/components/LimitOrder/index.tsx:465
+msgid "SWAP"
+msgstr ""
+
+#: src/components/Modals/ConfirmCreateFarmModal.tsx:60
+msgid "Save your farm URL!"
+msgstr ""
+
+#: src/components/Common/PairCard/TokenSelector.tsx:230
+msgid "Search by name, or paste address"
+msgstr ""
+
+#: src/components/Pool/PoolList/index.tsx:318
+msgid "Search by token ID, name, or symbol"
+msgstr ""
+
+#: src/components/Liquidity/AddLiquidity.tsx:540
+#: src/components/Pool/Create.tsx:289
+msgid "Second Token"
+msgstr ""
+
+#: src/components/Swap/index.tsx:117
+msgid "Select a token above"
+msgstr ""
+
+#: src/components/Common/AssetItem.tsx:119
+msgid "Select a token:"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Duration.tsx:141
+msgid "Select an end date"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Duration.tsx:161
+msgid "Select start date"
+msgstr ""
+
+#: src/components/LimitOrder/index.tsx:442
+msgid "Sell"
+msgstr ""
+
+#: src/components/Common/HSDatePicker.Containers.tsx:30
+msgid "September"
+msgstr ""
+
+#: src/components/Swap/index.tsx:125
+msgid "Slippage is at (or over) 100%"
+msgstr ""
+
+#: src/constants/messages.ts:7
+msgid "Something went wrong, please try again"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:618
+msgid "Stake"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:617
+msgid "Stake Liquidity"
+msgstr ""
+
+#: src/components/Farm/FarmItemDropdown.tsx:225
+msgid "Staked"
+msgstr ""
+
+#: src/components/ROICalculator/index.tsx:118
+#: src/components/ROICalculator/index.tsx:225
+msgid "Staked for"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:369
+msgid "Staking"
+msgstr ""
+
+#: src/components/Swap/Confirm/index.tsx:98
+msgid "Status:"
+msgstr ""
+
+#: src/components/Modals/GenericImageModal.tsx:29
+msgid "Success!"
+msgstr ""
+
+#: src/App.routes.ts:29
+#: src/constants/messages.ts:42
+msgid "Swap"
+msgstr ""
+
+#: src/components/Swap/index.tsx:123
+msgid "Swap Tokens"
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:71
+msgid "Swap fee"
+msgstr ""
+
+#: src/components/Swap/index.tsx:621
+msgid "Swap from"
+msgstr ""
+
+#: src/components/Swap/index.tsx:636
+msgid "Swap to"
+msgstr ""
+
+#: src/components/Common/TokenSwapSummary.tsx:143
+msgid "TO"
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:92
+msgid "The balance of this pair in the pool at the moment."
+msgstr ""
+
+#: src/components/Farm/CreateFarmDisclaimer.tsx:75
+msgid "The creation of Yield Farms is managed by smart contracts. Therefore, <0>the only way to terminate a Yield Farm is to fulfill its duration.</0> Remember to review the completion of all fields as many times as necessary."
+msgstr ""
+
+#: src/components/Common/ExchangeRate.tsx:94
+msgid "The current market face value of the asset."
+msgstr ""
+
+#: src/components/Swap/StatsCard/WarningCard.tsx:170
+msgid ""
+"The difference between the mid-price and the execution price of a\n"
+"trade. Price impact gives you an idea what slippage to actually\n"
+"expect based on the size of the order you’re placing and what’s\n"
+"going on in the market."
+msgstr ""
+
+#: src/components/Swap/StatsCard/index.tsx:81
+msgid ""
+"The least amount of tokens you will receive based on your slippage\n"
+"tolerance."
+msgstr ""
+
+#: src/components/Swap/StatsCard/WarningCard.tsx:181
+msgid ""
+"The maximum difference between your estimated price and execution\n"
+"price."
+msgstr ""
+
+#: src/components/Swap/index.tsx:126
+msgid "The minimum received is zero"
+msgstr ""
+
+#: src/components/Swap/Confirm/index.tsx:135
+msgid "The order will be executed if market conditions are favorable."
+msgstr ""
+
+#: src/components/Swap/Confirm/index.tsx:130
+msgid "The order will be executed when market conditions are favorable."
+msgstr ""
+
+#: src/constants/messages.ts:69
+msgid "The transaction was cancelled."
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:517
+msgid "There are no ended farms"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:516
+msgid "There are no live farms"
+msgstr ""
+
+#: src/components/ConnectWallet.tsx:121
+msgid "There was an error while connecting you. If it persists, please contact support."
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:497
+msgid "This farm is not from a Humble official partner"
+msgstr ""
+
+#: src/components/Modals/ClearLocalDataModal.tsx:24
+msgid "This will disconnect your session and clear all locally-cached data. You can reconnect your wallet after the window reloads."
+msgstr ""
+
+#: src/components/Modals/ConfirmCreateFarmModal.tsx:53
+msgid "To complete the Yield Farm creation process, you will stake <0>1 of the staking token</0>  into the farm. We recommend leaving this stake for the duration of the farm."
+msgstr ""
+
+#: src/components/Common/StakingLiquidity.tsx:434
+#: src/components/ROICalculator/index.tsx:197
+msgid "Token"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:75
+msgid "Token Added!"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:57
+msgid "Token Already Added"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/index.tsx:78
+msgid "Token Deleted"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:97
+msgid "Token ID"
+msgstr ""
+
+#: src/components/Common/PairCard/ManageTokens/AddToken.tsx:79
+msgid "Token not found"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:59
+msgid "Total number of tokens staked in farm"
+msgstr ""
+
+#: src/constants/messages.ts:70
+msgid "Transaction complete!"
+msgstr ""
+
+#: src/constants/messages.ts:72
+msgid "Transaction prevented due to slippage."
+msgstr ""
+
+#: src/constants/messages.ts:48
+msgid "Transfer V2 liquidity"
+msgstr ""
+
+#: src/reach/bridge/FarmAdmin.ts:27
+msgid "Transferring rewards payout ..."
+msgstr ""
+
+#: src/reach/api/trader.ts:172
+msgid "Transferring sell-asset ..."
+msgstr ""
+
+#: src/reach/bridge/Admin/interface.ts:33
+msgid "Transferring {0} and {1} ..."
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:636
+#: src/components/Farm/YourFarmItem.tsx:382
+#: src/components/Farm/YourFarmItem.tsx:394
+msgid "Unstake"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:635
+msgid "Unstake Liquidity"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:369
+msgid "Unstaking"
+msgstr ""
+
+#: src/components/Farm/index.tsx:177
+msgid "Updating Farm info"
+msgstr ""
+
+#: src/components/Pool/PoolList/index.tsx:263
+msgid "Updating pool info"
+msgstr ""
+
+#: src/constants/messages.ts:21
+msgid "Updating token balances"
+msgstr ""
+
+#: src/components/Modals/SlippageChangeModal.tsx:87
+msgid "Use default 0.5%"
+msgstr ""
+
+#: src/components/Farm/index.tsx:241
+msgid "Verified"
+msgstr ""
+
+#: src/components/Modals/SlippageChangeModal.tsx:72
+msgid "We recommend customizing slippage ONLY IF YOU ARE<0>COMPLETELY CONFIDENT</0> in what you are doing."
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:233
+msgid "We will make sure it gets listed."
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Duration.tsx:113
+msgid "When do you want the farm to be listed and start issuing rewards?"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Duration.tsx:132
+msgid "When do you want the farm to close and stop issuing rewards?"
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Tokens.tsx:116
+msgid "Which token will be staked in the farm? Select the token below."
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Rewards.tsx:283
+msgid "Which token will you reward stakers in? Select the token below."
+msgstr ""
+
+#: src/components/Farm/CreateFarm.Rewards.tsx:260
+msgid "Which wallet address will fund the {network} reward?"
+msgstr ""
+
+#: src/reach/api/liquidityProvider.ts:81
+msgid "Withdraw"
+msgstr ""
+
+#: src/constants/messages.ts:50
+msgid "Withdraw V2 liquidity"
+msgstr ""
+
+#: src/components/Modals/ConfirmMigrateWithdrawModal.tsx:57
+msgid "Withdraw V2 liquidity and separately deposit into a V3 pool."
+msgstr ""
+
+#: src/constants/messages.ts:47
+msgid "Withdraw your HumbleSwap V2 liquidity, and optionally move it into a V3 pool."
+msgstr ""
+
+#: src/components/Modals/ConfirmMigrateWithdrawModal.tsx:58
+msgid "Withdraw your V2 liquidity using a smart contract"
+msgstr ""
+
+#: src/components/Modals/MigrateWithdrawSuccessModal.tsx:17
+msgid "Withdrawal Complete!"
+msgstr ""
+
+#: src/constants/messages.ts:51
+msgid "Withdrawing V2 liquidity"
+msgstr ""
+
+#: src/constants/messages.ts:46
+msgid "Withrdaw/transfer liquidity"
+msgstr ""
+
+#: src/reach/bridge/FarmAdmin.ts:28
+msgid "Wrapping up Farm Application ..."
+msgstr ""
+
+#: src/components/Modals/ConfirmMigrateWithdrawModal.tsx:115
+msgid "You"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:508
+msgid "You claimed your rewards!"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:88
+#: src/components/Farm/CreateFarmForm.Validate.tsx:88
+msgid "You don't have enough {chain}"
+msgstr ""
+
+#: src/cache/index.ts:237
+msgid ""
+"You have a lot of assets in your account! \n"
+"We have only fetched some of them to minimize strain on your bandwidth. \n"
+"You can fetch additional assets when swapping or creating a pool."
+msgstr ""
+
+#: src/constants/messages.ts:45
+msgid "You have not added any liquidity"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:111
+msgid "You need a minimum of {requiredAcctMin} {0} to create a farm"
+msgstr ""
+
+#: src/components/Modals/LimitOrderCanceledModal.tsx:54
+#: src/components/Modals/SuccessSwapModal.tsx:31
+#: src/constants/messages.ts:24
+msgid "You received"
+msgstr ""
+
+#: src/constants/messages.ts:25
+msgid "You received at least"
+msgstr ""
+
+#: src/components/Modals/MigrateWithdrawSuccessModal.tsx:19
+msgid "You received:"
+msgstr ""
+
+#: src/pages/RemoveFromPool.tsx:136
+msgid "You removed liquidity!"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:506
+msgid "You staked liquidity"
+msgstr ""
+
+#: src/components/Modals/SuccessSwapModal.tsx:25
+msgid "You swapped successfully!"
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:507
+msgid "You unstaked liquidity"
+msgstr ""
+
+#: src/components/Modals/BuyAlgoModal.tsx:202
+msgid "You will be paying with:"
+msgstr ""
+
+#: src/components/ConfirmRemoveLiquidity.tsx:110
+#: src/components/Liquidity/AddLiquidity.tsx:560
+#: src/components/Modals/LimitOrderSubmitModal.tsx:118
+msgid "You will receive"
+msgstr ""
+
+#: src/components/Liquidity/RemoveLiquidity/index.tsx:291
+msgid "You will receive:"
+msgstr ""
+
+#: src/components/ClaimRewards/index.tsx:223
+msgid "Your Deposits"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:229
+msgid "Your Farm was created but not listed."
+msgstr ""
+
+#: src/components/ClaimRewards/index.tsx:270
+msgid "Your Rewards"
+msgstr ""
+
+#: src/components/ClaimRewards/index.tsx:313
+#: src/components/Common/StakingLiquidity.tsx:523
+msgid ""
+"Your account does not have enough ALGO to sign the transactions;\n"
+"please add more ALGO so that it is above your wallets minimum balance of {0} ALGO"
+msgstr ""
+
+#: src/components/Common/PairCard/index.tsx:277
+msgid "Your balance"
+msgstr ""
+
+#: src/constants/messages.ts:66
+msgid "Your browser is blocking popups; please disable this blocker before retrying."
+msgstr ""
+
+#: src/components/Modals/BuyAlgoModal.tsx:215
+msgid "Your country code:"
+msgstr ""
+
+#: src/constants/messages.ts:11
+msgid "Your funds were not moved."
+msgstr ""
+
+#: src/components/Liquidity/YourLiquidity/index.tsx:111
+msgid "Your liquidity"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.tsx:119
+msgid "Your {0} expense exceeds your min balance."
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:104
+msgid "Your {rtBal} {rtSymbol} balance is less than your {0} {rtSymbol} payout."
+msgstr ""
+
+#: src/components/Farm/FarmTable.tsx:512
+msgid "found"
+msgstr ""
+
+#: src/components/Pool/Create.tsx:326
+msgid "tokens to proceed"
+msgstr ""
+
+#: src/constants/messages.ts:65
+msgid "you need at least %AMT% %%."
+msgstr ""
+
+#: src/components/Common/Button.tsx:198
+msgid "{0}"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:103
+msgid "{BALANCE_LOW}."
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:97
+#: src/components/Farm/CreateFarmForm.Validate.tsx:97
+msgid "{BALANCE_LOW}: you have no {0}"
+msgstr ""
+
+#: src/components/Farm/CreateFarmForm.Validate.tsx:84
+#: src/components/Farm/CreateFarmForm.Validate.tsx:84
+msgid "{BALANCE_LOW}: you have no {chain}"
+msgstr ""
+
+#: src/components/Modals/BuyAlgoModal.tsx:189
+msgid "{connector} you want to get (min. 1):"
+msgstr ""
+
+#: src/components/ROICalculator/AmountSelector.tsx:72
+msgid "“My Balance” here includes both LP Tokens in your wallet, and LP Tokens already staked in this farm."
+msgstr ""
+
+#: src/components/ROICalculator/AmountSelector.tsx:73
+msgid "“My Balance” uses your available balance of LP Tokens for this pool."
+msgstr ""
+
+#: src/components/PopupBlocked.tsx:92
+msgid "⚠️ It usually prevents the Wallet popups from showing, which effectively blocks the transaction. To successfully use Humble please deactivate your pop-up blocker."
+msgstr ""
+
+#: src/constants/messages.ts:71
+msgid "⚠️ Skip transaction previews"
+msgstr ""
+
+#: src/components/IdleUserNotification/index.tsx:76
+msgid ""
+"🔄 You've been inactive for a long while. Please refresh to keep using\n"
+"Humble."
+msgstr ""
